@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        custom:srcCompat="@drawable/ic_launcher_foreground"/>
+
+    <io.github.controlwear.virtual.joystick.android.JoystickView
+        android:id="@+id/joystickView_right"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        custom:JV_backgroundColor="#00FFFFFF"
+        custom:JV_borderWidth="1dp"
+        custom:JV_borderColor="#F8F8FF"
+        custom:JV_buttonColor="@color/white"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="16dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/screenshotButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:contentDescription="Screenshot Icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/screenshot_icon"
+        custom:backgroundTint="#FFFFFF"
+        custom:borderWidth="1dp"
+        custom:fabSize="normal" />
+</FrameLayout>
